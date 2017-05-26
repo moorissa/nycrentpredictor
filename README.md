@@ -37,3 +37,7 @@ We decided to look at other models such as grid search across different cv value
 
 ### Concluding remark
 Finally, we found that variables like new control status recode (new_csr), condition of walls and stairways, are among very important variables that make up our model. This makes sense because the condition of housings, size of the apartment, and borough areas (location) are usually the most important aspect that people look at when they in search for renting a good apartment. Therefore we validated our final model using Lasso regression with R^2 value of 0.55.
+
+### Coding Reference
+* Model scoring: https://github.com/moorissa/nycrentpredictor/blob/master/rent_predictor.py
+* Model testing: https://github.com/moorissa/nycrentpredictor/blob/master/rent_tester.py
