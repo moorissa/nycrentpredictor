@@ -1,12 +1,20 @@
 # Predicting NYC Renting Prices using Lasso Regression
-## An attempt to find the best predictive linear model using scikit-learn.
+*An attempt to find the best predictive linear model using scikit-learn.*
 
-**Link:** https://github.com/moorissa/nycrentpredictor/
-
-**Contributors:**
+## Contributors:
 * Moorissa Tjokro
 * Arman Uygur
 
+## Project Overview
+The objective of this project is to help real estate agents estimate current market rates for apartments across all NYC boroughs using (2014 housing dataset from the U.S. Census Bureau)[https://www.census.gov/housing/nychvs/data/2014/userinfo2.html].
+
+Specifically, the data can be found here: https://www.census.gov/housing/nychvs/data/2014/uf_14_occ_web_b.txt
+You can also find a parsed version on figshare here: https://ndownloader.figshare.com/files/7586326
+
+To solve this problem, we created a machine learning approach to predict the monthly rent of an apartment using various linear regression models, from OLS to Lasso with different parameter values. We used features that apply to pricing an apartment that is not currently rented. To simplify the model solution, we assumed that the market doesn’t increase, so the rent for a new tenant would be the same as for the current tenant.
+
+
+## Linear Model Approach
 We create functions to load_data that imports and parses a dataset directly from a link as a csv file, standardizes, and imputes null values of each categorical and continuous feature in the dataset. It also splits dataset into two training sets and two test sets, which are X_train, y_train, X_test and y_test. In this case it we assign 33% test data for the default split cutoff.
 
 To make sure that we only use features that apply to pricing an apartment that is not currently rented, we match the features from Vacant Housing file with that of Occupied Housing file when loading our dataset. This leaves us with 10,138 rows, 41 independent variables, and a response variable.
