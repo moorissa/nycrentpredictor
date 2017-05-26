@@ -6,7 +6,7 @@
 * Arman Uygur
 
 ## Project Overview
-The objective of this project is to help real estate agents estimate current market rates for apartments across all NYC boroughs using (2014 housing dataset from the U.S. Census Bureau)[https://www.census.gov/housing/nychvs/data/2014/userinfo2.html].
+The objective of this project is to help real estate agents estimate current market rates for apartments across all NYC boroughs using [2014 housing dataset from the U.S. Census Bureau](https://www.census.gov/housing/nychvs/data/2014/userinfo2.html).
 
 Specifically, the data can be found here: https://www.census.gov/housing/nychvs/data/2014/uf_14_occ_web_b.txt
 You can also find a parsed version on figshare here: https://ndownloader.figshare.com/files/7586326
