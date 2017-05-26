@@ -8,8 +8,8 @@
 ## Project Overview
 The objective of this project is to help real estate agents estimate current market rates for apartments across all NYC boroughs using [2014 housing dataset from the U.S. Census Bureau](https://www.census.gov/housing/nychvs/data/2014/userinfo2.html).
 
-Specifically, the data can be found here: https://www.census.gov/housing/nychvs/data/2014/uf_14_occ_web_b.txt
-You can also find a parsed version on figshare here: https://ndownloader.figshare.com/files/7586326
+The full dataset can be found here: https://www.census.gov/housing/nychvs/data/2014/uf_14_occ_web_b.txt
+A parsed version can be found here: https://ndownloader.figshare.com/files/7586326
 
 To solve this problem, we created a machine learning approach to predict the monthly rent of an apartment using various linear regression models, from OLS to Lasso with different parameter values. We used features that apply to pricing an apartment that is not currently rented. To simplify the model solution, we assumed that the market doesn’t increase, so the rent for a new tenant would be the same as for the current tenant.
 
